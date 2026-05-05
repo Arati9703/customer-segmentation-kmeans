@@ -1,46 +1,50 @@
-# Customer Segmentation using K-Means Clustering
+# 🛍 Customer Segmentation using K-Means Clustering
 
-This project groups customers into different segments based on their income and spending behavior.
+This project focuses on grouping customers into meaningful clusters based on their spending behavior and income patterns using unsupervised machine learning.
 
-The aim is to understand customer patterns and help businesses create better targeted marketing strategies.
+It helps businesses understand customer behavior and improve targeted marketing strategies.
 
-## Dataset
+## 📂 Dataset
 
-The dataset used for this project was taken from **Kaggle**.
+The dataset used in this project was taken from **Kaggle**.
 
-Features used:
+Features include:
 
+* CustomerID
 * Gender
 * Age
 * Annual Income (k$)
 * Spending Score (1-100)
 
-## Project Workflow
+Important features used for clustering:
 
-* Imported required libraries
-* Loaded and explored dataset
-* Performed label encoding
-* Selected important features
-* Applied K-Means clustering
-* Used Elbow Method to determine optimal clusters
-* Calculated Silhouette Score
-* Visualized clusters
+* Age
+* Annual Income
+* Spending Score
+* Gender
 
-## Techniques Used
+## 🧠 Techniques Used
+
+This project uses unsupervised learning techniques:
 
 * K-Means Clustering
 * Elbow Method
 * Silhouette Score
 
-## Output
+The optimal number of clusters was selected after experimentation.
 
-Generated customer groups for:
+## 📊 Output
+
+The model groups customers into clusters such as:
 
 * High income, high spending customers
+* High income, low spending customers
+* Low income, high spending customers
 * Low income, low spending customers
-* Other segmented clusters
 
-## Technologies Used
+Cluster visualization was performed using scatter plots.
+
+## 🛠 Technologies Used
 
 * Python
 * Pandas
@@ -48,17 +52,3 @@ Generated customer groups for:
 * Matplotlib
 * Seaborn
 * Scikit-learn
-
-## Learning Outcomes
-
-* Unsupervised learning
-* Cluster analysis
-* Data visualization
-* Model validation
-
-## Future Scope
-
-* Advanced clustering techniques
-* Customer recommendation systems
-* Real-time analytics dashboard
-
